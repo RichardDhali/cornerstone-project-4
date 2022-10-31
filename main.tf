@@ -23,5 +23,5 @@ resource "aws_instance" "dockerjenkins" {
   tags = {
     Name = "dockerjenkins"
   }
-  user_data = file("jenkinsfile.sh")
+  user_data = file("jenkins.sh")
 }
