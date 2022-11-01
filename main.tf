@@ -13,8 +13,7 @@ resource "aws_instance" "dockerjenkins" {
     Name = "dockerjenkins"
   }
   user_data = file("jenkinsfile")
-  tags = {
-    Name = "app_deployments"
+ 
   }
-}
+
 
